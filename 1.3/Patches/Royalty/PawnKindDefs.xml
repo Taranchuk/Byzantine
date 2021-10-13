@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/PawnKindDef[defName = "Empire_Fighter_Cataphract"]/apparelRequired</xpath>
+			<value>
+				<apparelRequired>
+					<li>BZN_VarangianHelmet</li>
+					<li>BZT_VarangianArmor</li>
+				</apparelRequired>
+			</value>
+		</match>
+	</Operation>
+</Patch>
