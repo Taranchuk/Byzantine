@@ -5,14 +5,28 @@
 		<mods>
 			<li>Royalty</li>
 		</mods>
-		<match Class="PatchOperationReplace">
-			<xpath>/Defs/PawnKindDef[defName = "Empire_Fighter_Cataphract"]/apparelRequired</xpath>
-			<value>
-				<apparelRequired>
-					<li>BZN_VarangianHelmet</li>
-					<li>BZT_VarangianArmor</li>
-				</apparelRequired>
-			</value>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName = "Empire_Fighter_Cataphract"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>BZN_VarangianHelmet</li>
+							<li>BZT_VarangianArmor</li>
+						</apparelRequired>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[@Name = "JanissaryBase"]/apparelRequired</xpath>
+					<value>
+						<apparelRequired>
+							<li>BZN_ScoutHelmet</li>
+							<li>BZT_ScoutArmor</li>
+						</apparelRequired>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
 </Patch>

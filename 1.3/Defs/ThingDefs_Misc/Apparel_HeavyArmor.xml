@@ -58,4 +58,61 @@
         </apparel>
     </ThingDef>
 
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>BZT_ScoutArmor</defName>
+        <label>scout armor</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/ScoutArmor/ScoutArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+        </recipeMaker>
+        
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        
+        <statBases>
+            <WorkToMake>39000</WorkToMake>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>8</Mass>
+            <StuffEffectMultiplierArmor>0.90</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+				<li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScoutArmor/ScoutArmor</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>BZT_ScoutArmor</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
 </Defs>
